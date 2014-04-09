@@ -1,0 +1,43 @@
+﻿<Window x:Class="QwidichIHMWPF.GestionStades"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestion Des Stades" MinHeight="300" MinWidth="600" Height="300" Width="600"
+        Closing="Window_Closing">
+    <Grid>
+        <DockPanel>
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
+                <ListBox  Width="150" DockPanel.Dock="Left" ItemTemplate="{StaticResource stadeTemplate}" Name="cups" ItemsSource="{Binding Stades}" SelectedItem="{Binding SelectedStade}"/>
+            </ScrollViewer>
+            <StackPanel DockPanel.Dock="Top" Grid.Column="1">
+                <TextBlock HorizontalAlignment="Center" FontSize="25">Fiche du  stade</TextBlock>
+                <Grid DataContext="{Binding SelectedStade}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="297*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!-- Text -->
+                    <TextBlock Grid.Column="0" Grid.Row="0">Nom :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="1">Adresse :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="2">Places :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="3">Pourcentage com :</TextBlock>
+                    <!-- Field -->
+                    <TextBox Grid.Column="1"  Grid.Row="0" Name="nom" Text="{Binding Nom}"/>
+                    <TextBox Grid.Column="1"  Grid.Row="1" Name="adresse" Text="{Binding Adresse}"/>
+                    <TextBox Grid.Column="1"  Grid.Row="2" Name="places" Text="{Binding NombrePlaces}"/>
+                    <TextBox Grid.Column="1"  Grid.Row="3" Name="pcom" Text="{Binding PourcentageCommission}"/>
+                </Grid>
+                <WrapPanel HorizontalAlignment="Right">
+                    <Button Content="Supprimer" Name="supp" Style="{StaticResource buttonHome}" Command="{Binding Supp}"/>
+                    <Button Content="Ajouter"   Name="add" Style="{StaticResource buttonHome}" Command="{Binding Add}"/>
+                </WrapPanel>
+            </StackPanel>
+
+        </DockPanel>
+    </Grid>
+</Window>

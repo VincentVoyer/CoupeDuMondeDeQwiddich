@@ -1,0 +1,38 @@
+﻿<Window x:Class="QwidichIHMWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Qwiddicht Manager" MinHeight="300" MinWidth="400" Height="300" Width="400"
+        SizeChanged="Window_SizeChanged"
+        Closing="Window_Closing"
+        LocationChanged="Window_LocationChanged"
+        >
+
+    
+        
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Source="background.png"></Image>
+        <Grid Grid.Row="1"  >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Content="Gestion des coupes" Name="cups" Click="cups_Click" Style="{StaticResource buttonHome}"/>
+            <Button Grid.Column="0" Grid.Row="1" Content="Gestion des joueurs"  Click="Button_Click_1" Style="{StaticResource buttonHome}"/>
+            <Button Grid.Column="0" Grid.Row="2" Content="Gestion des Matchs"  Click="Button_Click_3" Style="{StaticResource buttonHome}"/>
+            <Button Grid.Column="1" Grid.Row="0" Content="Gestion des équipes"  Click="Button_Click"  Style="{StaticResource buttonHome}"/>
+            <Button Grid.Column="1" Grid.Row="1" Content="Gestion des stades" Click="Button_Click_2"  Style="{StaticResource buttonHome}"/>
+            <Button Grid.Column="1" Grid.Row="2" Content="Gestion des réservations" Click="Button_Click_4"  Style="{StaticResource buttonHome}"/>
+        </Grid>
+    </Grid>
+
+</Window>

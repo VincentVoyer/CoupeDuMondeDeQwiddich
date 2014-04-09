@@ -1,0 +1,15 @@
+U:\dotNet\QWSC\QWSC\bin\Debug\QWSC.exe.config
+C:\Users\Vincent\Documents\GitHub\CoupeDuMondeQwidich\QWSC\QWSC\bin\Debug\QWSC.exe.config
+C:\Users\Vincent\Documents\Visual Studio 2013\Projects\CoupeDuMondeQwidich\QWSC\QWSC\bin\Debug\QWSC.exe.config
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\QWSC.exe.config
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\QWSC.exe
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\QWSC.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\BL.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\Entities.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\BL.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\Entities.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\obj\Debug\QWSC.csprojResolveAssemblyReference.cache
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\obj\Debug\QWSC.exe
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\obj\Debug\QWSC.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\DAL.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\QWSC\bin\Debug\DAL.pdb

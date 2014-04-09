@@ -1,0 +1,11 @@
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\bin\Debug\DAL.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\bin\Debug\DAL.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\bin\Debug\Entities.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\bin\Debug\Entities.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\obj\Debug\DAL.Properties.Resources.resources
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\obj\Debug\DAL.csproj.GenerateResource.Cache
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\obj\Debug\DAL.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\obj\Debug\DAL.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\bin\Debug\SampleDatabase.mdf
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\DAL\bin\Debug\SampleDatabase_log.ldf

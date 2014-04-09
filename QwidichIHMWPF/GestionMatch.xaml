@@ -1,0 +1,62 @@
+﻿<Window x:Class="QwidichIHMWPF.GestionMatch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gestion Des Matchs" MinHeight="300" MinWidth="600" Height="300" Width="600"
+        Closing="Window_Closing">
+    <Grid>
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Left" Width="159">
+                <ComboBox  DockPanel.Dock="Top" Name ="cups" ItemTemplate="{StaticResource cupTemplate}" ItemsSource="{Binding cups}" SelectedItem="{Binding SelectedCup}"></ComboBox>
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible">
+                    <ListView Name="match" ItemsSource="{Binding Matchs}" SelectedItem="{Binding SelectedMatch}" >
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Stade" DisplayMemberBinding="{Binding Stade.Nom,Mode=OneWay}"/>
+                                <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date,Mode=OneWay}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </ScrollViewer>
+            </DockPanel>
+            <StackPanel DockPanel.Dock="Top" Grid.Column="1" >
+                <TextBlock HorizontalAlignment="Center" FontSize="25">Fiche du  match</TextBlock>
+                <Grid DataContext="{Binding SelectedMatch}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="297*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="22"/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <!-- Text -->
+                    <TextBlock Grid.Column="0" Grid.Row="0">Date :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="1">Prix :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="2">Stade :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="3">Equipe visiteur :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="4">Equipe domicile :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="5">Score visiteur :</TextBlock>
+                    <TextBlock Grid.Column="0" Grid.Row="6">Score domicile :</TextBlock>
+                    <!-- Field -->
+                    <DatePicker Grid.Column="1"  Grid.Row="0" Name="date" SelectedDate="{Binding Date}"/>
+                    <TextBox Grid.Column="1"  Grid.Row="1" Name="prix" Text="{Binding Prix}"/>
+                    <ComboBox Grid.Column="1" Grid.Row="2" Name="stade" ItemTemplate="{StaticResource stadeTemplate}" ItemsSource="{Binding Stades}" SelectedItem="{Binding Stade}"></ComboBox>
+                    <ComboBox Grid.Column="1" Grid.Row="3" Name="equipeVisiteur" ItemTemplate="{StaticResource teamTemplate}" ItemsSource="{Binding Equipes}" SelectedItem="{Binding EquipeVisiteur}"></ComboBox>
+                    <ComboBox  Grid.Column="1" Grid.Row="4" Name="equipeDomicile" ItemTemplate="{StaticResource teamTemplate}" ItemsSource="{Binding Equipes}" SelectedItem="{Binding EquipeDomicile}"></ComboBox>
+                    <TextBox Grid.Column="1"  Grid.Row="5" Name="scoreVisiteur" Text="{Binding ScoreEquipeVisiteur}"/>
+                    <TextBox Grid.Column="1"  Grid.Row="6" Name="scoreDomicile" Text="{Binding ScoreEquipeDomicile}"/>
+                </Grid>
+                <WrapPanel HorizontalAlignment="Right">
+                    <Button Content="Supprimer" Name="supp"     Style="{StaticResource buttonHome}" Command="{Binding Supp}"/>
+                    <Button Content="Ajouter"   Name="add"      Style="{StaticResource buttonHome}" Command="{Binding Add}"/>
+                </WrapPanel>
+            </StackPanel>
+
+        </DockPanel>
+    </Grid>
+</Window>

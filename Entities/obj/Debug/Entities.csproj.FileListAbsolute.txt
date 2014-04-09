@@ -1,0 +1,5 @@
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\Entities\bin\Debug\Entities.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\Entities\bin\Debug\Entities.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\Entities\obj\Debug\Entities.dll
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\Entities\obj\Debug\Entities.pdb
+C:\Users\Vincent\Source\Repos\Qwidich World Championship\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
